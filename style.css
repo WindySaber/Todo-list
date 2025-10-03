@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    color: #000;
+    display: grid;
+    place-content: center;
+    min-width: 800px;/**/
+}
+
+body {
+    min-height: 100vh;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    
+}
+
+.deletebox,
+.confirm {
+    height: 1.22rem;
+    width: 1.22rem;
+    position: absolute;
+    right: 20rem;
+    border-radius: 15px;
+}
+
+.deletebtn {
+    height: 2rem;
+    width: 3rem;
+    font-size: 1rem;
+    position: absolute;
+    right: 20rem;
+    top: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    color: red;
+    border: none;
+    display: none;
+}
+.deletebtn:hover {
+    color: rgba(255, 0, 0,0.8);
+}
+
+h1 {
+    min-width: 800px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.2rem;
+}
+
+.list {
+    font-size: 1.5rem;
+    font-family:sans-serif;
+    padding: 0.3rem;
+}
+
+.checkbox {
+    height: 1.2rem;
+    width: 1.2rem;
+}
+
+label {
+    padding-left: 0.3rem;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 22rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* .foot {
+    display: flex;
+    justify-content: space-evenly;
+} */
+
+span {
+    color: #fff;
+}
+
+.add {
+    background-color: orange;
+}
+.add:hover {
+    background-color: rgba(255, 165, 0,0.8);
+}
+
+.add,
+.delete,
+.search {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+}
+
+.icon {
+    font-size: 24px;
+}
+
+.delete_icon {
+    font-size: 24px;
+    color: #fff;
+}
+
+.delete {
+    background-color: red;
+}
+.delete:hover {
+    background-color: rgba(255, 0, 0,0.8);
+}
+
+.search {
+    background-color: #000;
+}
+.search:hover {
+    background-color: rgba(0, 0, 0,0.8);
+}
+
+.text_input {
+    border:none;
+    font-size: 1.5rem;
+    width: 720px;
+    padding: 0.2rem;
+    margin-left: 0.3rem;
+}
+
+input[type=text]:focus{
+    outline: none;
+    background-color: rgba(0, 0, 0,0.05);
+}
+
+.searchbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.search_box{
+    font-size: 1.5rem;
+    width: 400px;
+}
+
+.hl {
+    background-color: orange;
+}
+
+.quit {
+    height: 2rem;
+    width: 3rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    background-color: #fff;
+    color: red;
+    border: none;
+}
+.quit:hover {
+    color: rgba(255, 0, 0,0.8);
+}
