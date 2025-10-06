@@ -1,38 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- 基础元信息：字符编码和视口设置 -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>To-do List App</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="body">
+    <!-- ====================== -->
+    <!-- 主标题区域：显示应用名称 -->
+    <!-- ====================== -->
     <h1>To-do list</h1>
 
+    <!-- ====================== -->
+    <!-- 主题切换开关：用于切换明暗主题 -->
+    <!-- ====================== -->
+    <button class="cord-bulb-switch" aria-label="切换主题">
+        <span class="cord-bulb">
+          <span class="line"></span>   <!-- 灯绳的视觉表示 -->
+          <span class="bulb"></span>   <!-- 灯泡的视觉表示 -->
+        </span>
+    </button>
+
+    <!-- ====================== -->
+    <!-- 搜索功能区域：包含搜索图标、输入框和取消按钮 -->
+    <!-- ====================== -->
     <div class="searchbox">
-        <label for="text"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg></label>
-        <input type="search" class="search_box">
+        <!-- 搜索图标：SVG格式的放大镜图标 -->
+        <label for="text">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="40px" fill="#000000">
+                <path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/>
+            </svg>
+        </label>
+        <!-- 搜索输入框：用户输入搜索关键词 -->
+        <input type="search" class="search_box" placeholder="搜索任务...">
+        <!-- 取消搜索按钮：退出搜索模式 -->
         <button class="quit">取消</button>
     </div>
 
-    <div class="lists">
+    <!-- ====================== -->
+    <!-- 主任务列表容器：显示所有待办事项 -->
+    <!-- ====================== -->
+    <div class="lists"></div>
 
-    </div>
+    <!-- ====================== -->
+    <!-- 搜索结果容器：显示搜索匹配的任务 -->
+    <!-- ====================== -->
+    <div class="selectList"></div>
 
-    <div class="selectList">
+    <!-- ====================== -->
+    <!-- 删除操作按钮：确认删除选中的任务 -->
+    <!-- ====================== -->
+    <button class="deletebtn">删除</button>
 
-    </div>
-
-    <button class="deletebtn">删除🗑️</button>
-
-    <footer>
-        <button class="add"><span class="icon">+</span></button>
-        <button class="delete"><span class="delete_icon">×</span></button>
-        <button class="search"><span><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg></span></button>
+    <!-- ====================== -->
+    <!-- 底部操作栏：包含添加、删除和搜索按钮 -->
+    <!-- ====================== -->
+    <footer class="foot">
+        <!-- 添加新任务按钮 -->
+        <button class="add btn" aria-label="添加新任务">
+            <span class="icon">+</span>
+        </button>
+        <!-- 删除任务按钮：进入删除模式 -->
+        <button class="delete btn" aria-label="删除任务">
+            <span class="delete_icon">×</span>
+        </button>
+        <!-- 搜索任务按钮：打开搜索框 -->
+        <button class="search btn" aria-label="搜索任务">
+            <span>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff">
+                    <path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/>
+                </svg>
+            </span>
+        </button>
     </footer>
 
     <script src="script.js"></script>
-
-
 </body>
 </html>
