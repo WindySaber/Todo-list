@@ -82,8 +82,8 @@ function addItem(e) {
 
 /**
  * 将单个任务添加到DOM
- * @param {Object} item - 任务对象
- * @param {number} idx - 任务索引，默认为最后一个
+ * item - 任务对象
+ * idx - 任务索引，默认为最后一个
  */
 function appendOneItem(item, idx = items2.length - 1) {
     // 创建任务DOM元素
@@ -212,7 +212,7 @@ function showSelected(){
 
 /**
  * 保存任务优先级变更
- * @param {Event} e - 事件对象
+ * e - 事件对象
  */
 function storagePrior(e){
     const idx = e.target.dataset.index; // 获取任务索引
@@ -372,8 +372,8 @@ function initApp() {
 
 /**
  * 将任务数组渲染到DOM
- * @param {Array} plates - 任务数组
- * @param {HTMLElement} plateList - 目标容器
+ * plates - 任务数组
+ * plateList - 目标容器
  */
 function writeItem(plates, plateList){
     plateList.innerHTML = plates.map((plate, i) => {
