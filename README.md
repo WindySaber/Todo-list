@@ -52,9 +52,17 @@
 
 ## 代码结构
 todo-list-app/
+
 ├── index.html # 主HTML文件
+
 ├── style.css # 样式文件
+
 ├── script.js # JavaScript逻辑
+
+├── .gitignore # 忽视文件配置
+
+├── LICENSE # MIT许可证
+
 └── README.md # 项目文档
 
 ### HTML结构说明
