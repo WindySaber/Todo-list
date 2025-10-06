@@ -56,6 +56,7 @@ todo-list-app/
 ├── style.css # 样式文件
 ├── script.js # JavaScript逻辑
 └── README.md # 项目文档
+
 ### HTML结构说明
 
 - **主标题**：应用名称
