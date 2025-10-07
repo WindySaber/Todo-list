@@ -163,9 +163,8 @@ function showSearchBox(){
 
 /**
  * 根据关键词过滤任务
- * @param {string} inputText - 搜索关键词
- * @param {Array} items - 任务数组
- * @returns {Array} 匹配的任务数组
+ * inputText - 搜索关键词
+ * items - 任务数组
  */
 function findText(inputText, items){
     const regex = new RegExp(inputText,"gi"); // 创建不区分大小写的正则表达式
